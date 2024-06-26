@@ -8,7 +8,7 @@ function handleResponseFromAPI(promise) {
       };
     })
     .catch(() => {
-      throw new Error();
+      throw new Error('Error ocurred');
     });
 }
 export default handleResponseFromAPI;

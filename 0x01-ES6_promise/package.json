@@ -17,6 +17,7 @@
         "jest": "^24.9.0"
     },
     "dependencies": {
-        "@babel/cli": "^7.24.7"
+        "@babel/cli": "^7.24.7",
+        "mkdirp": "^3.0.1"
     }
 }

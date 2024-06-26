@@ -5,9 +5,9 @@ function getFullResponseFromAPI(success) {
         status: 200,
         body: 'Success',
       });
-    } else {
-      rej(Error('The fake API is not working currently'));
-    }
+  } else {
+rej(Error('The fake API is not working currently'));
+}
   });
 }
 export default getFullResponseFromAPI;

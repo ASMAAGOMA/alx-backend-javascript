@@ -5,4 +5,4 @@ res("success");
 });
 return promise;
 }
-module.exports = { getResponseFromAPI };
+export default getResponseFromAPI;

@@ -1,5 +1,5 @@
 function handleResponseFromAPI(promise) {
-  promise
+  Promise
     .then(() => {
       console.log('Got a response from the API');
       return {

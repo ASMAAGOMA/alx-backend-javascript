@@ -1,8 +1,8 @@
-
-function getResponseFromAPI(){
-let promise = new Promise((res, rej)=>{
-res("success");
-});
-return promise;
+function getResponseFromAPI() {
+  const promise = new Promise((res, rej) => {
+    res('success');
+    rej(Error('fail'));
+  });
+  return promise;
 }
 export default getResponseFromAPI;

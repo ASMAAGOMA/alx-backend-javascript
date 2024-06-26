@@ -5,7 +5,7 @@ function handleResponseFromAPI(promise) {
       body: 'success',
     }))
     .catch(() => {
-      throw new Error('Error occurred');
+      throw new Error();
     })
     .finally(() => {
       console.log('Got a response from the API');

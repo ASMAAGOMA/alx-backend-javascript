@@ -13,7 +13,4 @@ export default class Building {
 	set sqft(fsqft) {
 		this._sqft = fsqft;
 	}
-	evacuationWarningMessage() {
-		throw new Error('Class extending Building must override evacuationWarningMessage');
-	}
 }

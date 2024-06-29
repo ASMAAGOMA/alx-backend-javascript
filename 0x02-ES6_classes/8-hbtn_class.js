@@ -14,4 +14,3 @@ class HolbertonClass {
   }
   
   export default HolbertonClass;
-  

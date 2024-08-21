@@ -1,11 +1,13 @@
-console.log('Welcome to Holberton School, what is your name?');
+process.stdout.write('Welcome to Holberton School, what is your name?\n');
+
 process.stdin.on('readable', () => {
-  const inp = process.stdin.read();
+  const chunk = process.stdin.read();
+
   if (inp) {
-    const name = inp.toString().replace(/\r?\n/g, '');
-    console.log(`Your name is: ${name}`);
+    process.stdout.write(`Your name is: ${inp}`);
   }
 });
+
 process.stdin.on('end', () => {
-  console.log('This important software is now closing');
+  process.stdout.write('This important software is now closing\n');
 });

@@ -2,7 +2,7 @@ console.log('Welcome to Holberton School, what is your name?');
 process.stdin.on('readable', () => {
   const inp = process.stdin.read();
   if (inp) {
-    const name = inp.toString().trim();
+    const name = inp.toString().replace(/\r?\n/g, '');
     console.log(`Your name is: ${name}`);
   }
 });

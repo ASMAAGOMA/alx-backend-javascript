@@ -11,7 +11,9 @@ describe('sendPaymentRequestToAp', () => {
 
     sendPaymentRequestToAp(100, 20);
     expect(stubbb.calledOnceWithExactly('SUM', 100, 20)).to.be.true;
+    expect(stubbb.calledOnce).to.be.true;
     expect(conSpy.calledOnceWithExactly('The total is: 10')).to.be.true;
+    expect(conSpy.calledOnce).to.be.true;
     stubbb.restore();
     conSpy.restore();
   });

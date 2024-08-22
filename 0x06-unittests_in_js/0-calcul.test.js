@@ -1,5 +1,10 @@
-import assert from 'assert';
-import calculateNumber from './0-calcul.js';
+//import assert from 'assert';
+
+const { assert } = require("chai");
+
+//import calculateNumber from './0-calcul.js';
+const calculateNumber = require('./0-calcul')
+
 
 describe('calculateNumber', () => {
   it('should return 4 when inputs are 1 and 3', () => {

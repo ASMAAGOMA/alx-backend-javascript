@@ -1,6 +1,6 @@
 //import assert from 'assert';
 
-const { assert } = require("chai");
+const assert = require('assert');
 
 //import calculateNumber from './0-calcul.js';
 const calculateNumber = require('./0-calcul')
